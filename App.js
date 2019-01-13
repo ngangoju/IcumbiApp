@@ -6,7 +6,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Welcome to Icumbi App</Text>
-        <Text>Coding is Good Added By Emmzzo</Text>
+        <Text>Coding is Good Added By Emmzzo to day</Text>
       </View>
     );
   }
