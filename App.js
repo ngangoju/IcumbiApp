@@ -7,7 +7,6 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text>Welcome to Icumbi App</Text>
         <Text>Coding is Good</Text>
-        <Text>===============</Text>
       </View>
     );
   }
