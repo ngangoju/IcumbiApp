@@ -37,10 +37,10 @@ export default class ProfileTab extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#000"
-  },
+  // container: {
+  //   flex: 1,
+  //   backgroundColor: "#000"
+  // },
   // contentContainer: {
   //   paddingTop: 30
   // },

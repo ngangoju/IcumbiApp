@@ -8,7 +8,7 @@ import {
   FlatList,
   TouchableOpacity
 } from "react-native";
-
+// import Houses from '../components/house';
 
 // const child =(props) =>{
 //     return(
@@ -32,20 +32,24 @@ export default class ProfileHeader extends React.Component {
     
     
     render() {
+        const user={
+            name: 'Mutabazi Matthew',
+        };
         return (
+            
             <ImageBackground style={styles.headerBackground} source={require('../img/22.jpg')} >
-
+                
                 <View style={styles.header}>
                     <View style={styles.profilepicWrap}>
                         <Image style={styles.headerBackground} source={require('../img/pp.png')} ></Image>
                     </View>
-                        <Text style={styles.name}>Mutabazi Matthew</Text>
-                        <Text style={styles.pos}>Software Developer</Text>
+                        <Text style={styles.name}>{user.name? user.name: 'Anonymous'}</Text>
+                        <Text style={styles.pos}>{user.role==="House Owner"? user.role: 'Client'}</Text>
                     </View>
-                    <Houses />
+                    
                     <View>
                         <Text style={styles.booked } onPress={this.props.booked}>houses</Text>
-                        <TouchableOpacity onPress={()=> Linking.openURL('./TabBarIcon.js')}>
+                        <TouchableOpacity onPress={()=> Linking.openURL('https://icumbi.tres.rw/house')}>
                             <Text>Google</Text>
                         </TouchableOpacity>
                         
@@ -58,16 +62,22 @@ export default class ProfileHeader extends React.Component {
 const styles = StyleSheet.create({
   headerBackground:{
     flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    // height: 100,
     width: null,
-    height: 200,
+    height: 827,
     alignSelf: 'stretch'
+
   },
   header:{
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20,
-    backgroundColor: '#ffffcc'
+    // padding: 20,
+    height: 200,
+    alignSelf: 'stretch',
+    backgroundColor: 'rgba(ff,ff,ff, 0.4)'
   },
   profilepicWrap:{
     width: 100,
