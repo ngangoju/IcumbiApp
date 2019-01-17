@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View
 } from "react-native";
+import Houses from "../components/house";
 
 export default class HouseTab extends React.Component {
   static navigationOptions = {
@@ -16,16 +17,7 @@ export default class HouseTab extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView
-          style={styles.container}
-          contentContainerStyle={styles.contentContainer}
-        >
-          <View style={styles.welcomeContainer}>
-            <Text>Houses list component</Text>
-          </View>
-        </ScrollView>
-      </View>
+     <Houses/>
     );
   }
 }
