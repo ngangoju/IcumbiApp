@@ -15,12 +15,7 @@
     "expo": "^32.0.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-<<<<<<< HEAD
-    "react-native-elements": "^1.0.0-beta7",
-    "react-native-vector-icons": "^6.1.0"
-=======
     "react-navigation": "^3.0.9"
->>>>>>> d57a7b278d81cc18ed5b1a407eae7d4f54fd47ba
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
