@@ -15,7 +15,7 @@ const HouseStack = createStackNavigator({
 });
 
 HouseStack.navigationOptions = {
-  tabBarLabel: "House",
+  tabBarLabel: "Houses",
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
