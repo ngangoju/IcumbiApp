@@ -77,7 +77,8 @@ const styles = StyleSheet.create({
     // padding: 20,
     height: 200,
     alignSelf: 'stretch',
-    backgroundColor: 'rgba(ff,ff,ff, 0.4)'
+    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    // opacicity: 0.4
   },
   profilepicWrap:{
     width: 100,
